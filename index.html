@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Canine Kenya</title>
+  <meta name="description" content="Royal Canine Kenya - Trusted Dog Breeders & Delivery Service. Healthy Spitz puppies, safe delivery across Kenya.">
+  <meta property="og:title" content="Royal Canine Kenya">
+  <meta property="og:description" content="Healthy & Beautiful Dogs Delivered Safely.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1601758003122-58c75a5a1b8b">
+  <meta property="og:type" content="website">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #c49b3a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601758003122-58c75a5a1b8b') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .hero .cta {
+      margin-top: 15px;
+      background: #c49b3a;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .hero .cta:hover {
+      background: #a67c2d;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .services h3, .about h3, .contact h3 {
+      margin-top: 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .service-card {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    .service-card h4 {
+      margin: 10px 0;
+      color: #c49b3a;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+    form button {
+      background: #c49b3a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background: #a67c2d;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Royal Canine Kenya</h1>
+    <p>Trusted Dog Breeders & Delivery Service</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Healthy & Beautiful Dogs Delivered Safely</h2>
+    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Contact Us Now
+    </button>
+  </section>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h3>About Us</h3>
+      <p>At Royal Canine Kenya, we specialize in breeding healthy, well-trained Spitz and other dog breeds. We ensure safe delivery to your town with trusted carriers. Your satisfaction and the wellbeing of our puppies come first.</p>
+    </section>
+
+    <section id="services" class="services">
+      <h3>Our Services</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <h4>🐶 Pure Breed Puppies</h4>
+          <p>Beautiful Spitz and other breeds raised with care and love.</p>
+        </div>
+        <div class="service-card">
+          <h4>🚚 Safe Delivery</h4>
+          <p>Reliable transport with Fargo Carrier Services across Kenya.</p>
+        </div>
+        <div class="service-card">
+          <h4>💰 Affordable Pricing</h4>
+          <p>Transparent and fair costs with no hidden charges.</p>
+        </div>
+        <div class="service-card">
+          <h4>📞 Support & Guidance</h4>
+          <p>Ongoing care tips and after-sale support for happy pets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact Us</h3>
+        <form action="send_email.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone" required>
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      <p><strong>Phone:</strong> +254 7XX XXX XXX</p>
+      <p><strong>Email:</strong> info@royalcaninekenya.com</p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Royal Canine Kenya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
